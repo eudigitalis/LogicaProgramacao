@@ -1,2 +1,2 @@
 # LogicaProgramacao
-Estudos 
+Estudos sobre lógica de programação
