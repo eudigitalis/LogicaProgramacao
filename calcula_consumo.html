@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculo consumo combustivel</title>
+</head>
+<body>
+    <h1>Álcool ou Gasolina</h1>
+    <script>
+        var capacidadeTanque = 40;
+        var caminhoComGasolina = 480;
+        var caminhoComAlcool = 300;
+        var consumoDeAlcool = caminhoComAlcool/capacidadeTanque;
+        var consumoDeGasolina = caminhoComGasolina/capacidadeTanque;
+        var precoDaGasolina = 2.90;
+        var precoDoAlcool = 2.40;
+        var precoPorKmGasolina = consumoDeGasolina/precoDaGasolina;
+        var precoPorKmAlcool = caminhoComAlcool/precoDoAlcool;
+
+        document.write(consumoDeGasolina.toFixed(2) +" km por litro de gasolina." + "<br>");
+
+        document.write("Preço por KM com gasolina é "+Math.round(precoPorKmGasolina));
+
+        document.write(consumoDeAlcool.toFixed(1) + " km por litro de álcool.");
+
+    </script>
+
+</body>
+</html>

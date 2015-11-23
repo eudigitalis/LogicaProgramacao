@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mostra idades</title>
+</head>
+<body>
+    <script>
+
+        var ano = 2015;
+        //esta função mostra um mensagem no navegadore pular linha
+        var mostra = function(frase){
+            document.write("<big>" +frase+ "</big>");
+            pulaLinha();
+        }
+        /*Função pula linha*/
+        var pulaLinha= function(){
+            document.write("<br><hr><br>");
+        }
+        mostra("Eu nasci em: " + (ano - 28));
+        mostra("Eu nasci em: " + ( ano - 25 ));
+        mostra("Paulo nasceu em: " + ( ano - 32 ));
+        console.log( "esta mensagem aparece apenas no log" );
+    </script>
+</body>
+</html>
