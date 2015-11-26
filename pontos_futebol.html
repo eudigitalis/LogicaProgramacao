@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pontos Futebol</title>
+</head>
+<body>
+    <script>
+        var vitorias = prompt( "Quantos jogos o CDC Futebol Clube venceu?" );
+        var empates = prompt( "Quantos jogos o CDC Futebol Clube empatou?" );
+
+
+        function pulaLinha(){
+            document.write("<hr>")
+        }
+        var mostra= function(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+        if(pontos>pontos_adversario){
+            mostra("Nosso time esta indo melhor que o Livros Velhos!");
+        }else if(pontos < pontos_adversario){
+            mostra("Nosso time esta pior que o Livros Velhos!");
+        }else if(pontos == pontos_adversario){
+            mostra("Nosso time esta empatado com Livros Velhos!");
+        }
+
+
+        mostra( "Nosso time tem " + pontos + " pontos!" );
+        mostra( "Livros Velhos tem " + pontos_adversario + " pontos!" );
+    </script>
+</body>
+</html>

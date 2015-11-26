@@ -6,9 +6,11 @@
 </head>
 <body>
     <script>
-        var peso = 85;
-        var altura = 1.85;
-        var imc = peso / (altura * altura);
+        var nome = prompt("Qual é o seu nome?");
+        var peso = prompt(nome+" Digite o seu peso!");
+        var altura = prompt(nome+" Digite a sua altura!");
+
+
         function pulaLinha(){
             document.write("<hr>")
         }
@@ -16,15 +18,19 @@
             document.write(frase);
             pulaLinha();
         }
-        mostra("Meu IMC é: " + imc.toFixed(2));
-        mostra("Teste");
         var calculoImc = function(peso,altura){
             var imc = peso/(altura*altura);
-            mostra("Seu IMC é: " + imc);
+            return imc.toFixed(2);
         }
-        calculoImc(100,2);
+        var imc = calculoImc(peso,altura);
+        mostra("O imc do\(a)\ "+nome + " é: "+imc);
 
-
+        if(imc>35){
+            mostra("Seu IMC indica que voce está ACIMA do peso.");
+        }
+        if(imc >18.5 && imc <35){
+            mostra ( "OK! Seu IMC está entre os dois limites." );
+        }
     </script>
 </body>
 </html>
