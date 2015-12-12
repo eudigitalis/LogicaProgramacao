@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Copa do mundo!</title>
+</head>
+<body>
+    <script>
+        var anoDeCopa = parseInt(prompt("Informe o ano inicial"));
+        var anoLimite = parseInt(prompt("Qual é o ano final?"));
+
+        var mostra = function(frase){
+            document.write(frase+"<br>")
+        }
+        while(anoDeCopa<=anoLimite){
+            mostra(anoDeCopa + " tem copa!");
+            anoDeCopa = anoDeCopa + 4;
+        }
+        mostra( "Ufa! Esses foram os anos de copa até 2014." );
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jogo adivinha</title>
+</head>
+<body>
+    <script>
+        var sorteioDigitado = prompt("digite a quantidade de jogos");
+        var numeroAleatorio = sorteia(sorteioDigitado);
+        var numeroPensado = prompt("Digite o número que voce pensou");
+        function sorteia(n){
+            return Math.round(Math.random()*n);
+        }
+
+        if(numeroPensado == numeroAleatorio){
+            document.write("Voce acertou!");
+        }else{
+            document.write("Você errou!");
+        }
+        if(numeroPensado>numeroAleatorio){
+            document.write("Numero pensado "+numeroPensado+" é maior que o número "+numeroAleatorio+" número aleatorio");
+
+        }else{
+            document.write("Numero pensado "+numeroPensado+" é menor que o número "+numeroAleatorio+" número aleatorio");
+        }
+        console.log(numeroAleatorio);
+    </script>
+</body>
+</html>
