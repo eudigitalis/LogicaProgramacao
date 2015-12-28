@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+</head>
+<body>
+
+    <canvas id="tela" width="600" height="400"></canvas>
+    <script>
+        var desenharQuadradoVerde = function(x,y){
+            var tela =document.getElementById("tela");
+            var c = tela.getContext("2d")
+            c.fillStyle="green";
+            c.fillRect(x,y,50,50);
+
+            c.strokeStyle = "black";
+            c.strokeRect(x,y,50,50)
+        }
+        for(var x= 0;x<600;x=x+50){
+            desenharQuadradoVerde(x,0);
+        }
+
+    </script>
+</body>
+
+
+</html>
